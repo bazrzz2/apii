@@ -1,1 +1,1 @@
-return "yes"
+print("gg")
