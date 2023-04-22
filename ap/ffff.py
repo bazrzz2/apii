@@ -1,1 +1,1 @@
-print("yes")
+return "yes"
