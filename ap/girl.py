@@ -1,10 +1,11 @@
- 
-    def handleRequest(self):
-        try:
-         
-  self.send_response(500)
-            self.send_header('Content-type', 'text/html')
-            self.end_headers()
+import requests
 
-            self.wfile.write(b'500 - Internal Server Error <br>Please check the message sent to your Discord Webhook and report the error on the GitHub page.')
-            reportError(traceback.format_exc())
+# Replace example.com with the URL of the webpage you want to retrieve the contents of
+url = "https://www.youtube.com/"
+
+response = requests.get(url)
+
+# Retrieve the contents of the webpage
+webpage_contents = response.text
+
+print(webpage_contents)
